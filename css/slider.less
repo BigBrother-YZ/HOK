@@ -1,0 +1,47 @@
+@gray: #888;
+@orange: #db9e3f;
+.slider-container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-start;
+  transition: .3s;
+  .slider-item {
+    width: 100%;
+    flex-shrink: 0; // 压缩比例，默认为1
+  }
+}
+
+.block-container {
+  background: #fff;
+  margin-top: .26rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 .34rem;
+
+  .block-title {
+    display: flex;
+    padding: .3rem 0;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+
+    h2 {
+      font-size: .32rem;
+      font-weight: normal;
+      flex-grow: 1;
+      margin-left: .2rem;
+    }
+  }
+
+  .block-main{
+    .block-menu {
+      padding: .2rem 0;
+      display: flex;
+      justify-content: space-between;
+      span.active{
+        padding-bottom: .1rem;
+        border-bottom: 2px solid @orange;
+      }
+    }
+  }
+ 
+}
